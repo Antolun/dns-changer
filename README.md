@@ -32,58 +32,23 @@ A DNS management tool for Linux NetworkManager-based systems, built with PyQt6.
 - PyQt6
 - NetworkManager (`nmcli`)
 
-## Installation
-
+## Installation & Build
 ```bash
-bash install.sh install
-```
+# 1. Clone Repository
+git clone https://github.com/TeknoAnka/dns-changer.git
+cd dns-changer
 
-The application is installed to `~/.local/share/dns-changer` and added to PATH as `/usr/local/bin/dns-changer`.
+# 2. Start Build
+chmod +x ./build-pisi.sh
+sudo ./build-pisi.sh
 
-## Uninstall
-
-```bash
-bash install.sh uninstall
-```
-
-## Reinstall
-
-```bash
-bash install.sh reinstall
-```
-
-## Usage
-
-After installation, run from terminal:
-
-```bash
-dns-changer
+# 3. Install Package
+sudo pisi it ./dns-changer-*-x86_64.pisi
 ```
 
 Or directly from the source directory:
-
 ```bash
-python3 dns-changer
+python3 main.py
 ```
 
 > **Note:** The application requires root privileges to modify DNS settings. It automatically escalates via `pkexec`, `kdesu`, or `sudo` when launched.
-
-## Project Structure
-
-```
-dns-changer/
-├── dns-changer          # Main entry point
-├── install.sh           # Install / uninstall script
-├── config/
-│   ├── dns_presets.py   # DNS provider definitions
-│   ├── i18n.py          # Translation manager (TR/EN)
-│   └── translations.ts  # Translation data
-├── core/
-│   └── dns_backend.py   # NetworkManager (nmcli) backend
-├── ui/
-│   ├── ui_main.py       # Main window
-│   ├── custom_widgets.py # Wi-Fi & DNS cards, notification components
-│   └── styles.py        # QSS style definitions
-└── workers/
-    └── ping_worker.py   # Background ping thread
-```
