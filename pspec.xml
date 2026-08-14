@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>dns-changer</Name>
-        <Homepage>https://github.com/TeknoAnka/dns-changer</Homepage>
+        <Homepage>https://github.com/Antolun/dns-changer</Homepage>
         <Packager>
             <Name>Solzic0</Name>
             <Email>solzic0@yandex.com</Email>
@@ -23,7 +23,7 @@
         <Files>
             <Path fileType="executable">/usr/bin/dns-changer</Path>
             <Path fileType="data">/usr/share/dns-changer</Path>
-            <Path fileType="data">/usr/share/applications/com.teknoanka.dns-changer.desktop</Path>
+            <Path fileType="data">/usr/share/applications/com.antolun.dns-changer.desktop</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/dns-changer.png</Path>
             <Path fileType="doc">/usr/share/doc/dns-changer</Path>
         </Files>

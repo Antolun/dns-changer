@@ -143,7 +143,7 @@ def main():
     app = QApplication(sys.argv)
 
     app.setApplicationName(LanguageManager.t("app_title"))
-    app.setOrganizationName("TeknoAnka")
+    app.setOrganizationName("Antolun")
     app.setWindowIcon(_icon("logo.png"))
     
     window = MainWindow()
