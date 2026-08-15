@@ -144,7 +144,7 @@ def main():
 
     app.setApplicationName(LanguageManager.t("app_title"))
     app.setOrganizationName("Antolun")
-    app.setWindowIcon(_icon("logo.png"))
+    app.setWindowIcon(_icon("dns-changer.png"))
     
     window = MainWindow()
     window.show()

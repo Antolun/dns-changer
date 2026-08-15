@@ -40,11 +40,11 @@ git clone https://github.com/Antolun/dns-changer.git
 cd dns-changer
 
 # 2. Start Build
-chmod +x ./build-pisi.sh
-sudo ./build-pisi.sh
+chmod +x ./build-luppo.sh
+sudo ./build-luppo.sh
 
 # 3. Install Package
-sudo pisi it ./dns-changer-*-x86_64.pisi
+sudo luppo it ./dns-changer-*-x86_64.luppo
 ```
 
 Or directly from the source directory:
